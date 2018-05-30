@@ -19,9 +19,5 @@ class ProductsController extends JsonResource
 
     public function store(Request $request){
 
-        $validatedData = $request->validate([
-            'title' => 'required|unique:post|max:255',
-            'body' => 'required',
-        ]);
     }
 }
